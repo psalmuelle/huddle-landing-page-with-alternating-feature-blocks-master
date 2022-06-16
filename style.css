@@ -42,10 +42,12 @@ header {
   border: 0;
   border-radius: 4rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 500ms ease-in;
 }
 #header-btn:hover{
   cursor: pointer;
   color: var(--grayish-blue);
+  transform: scale(1.05);
 }
 #header-feature-block {
   display: flex;
@@ -79,10 +81,12 @@ header {
   font-weight: bold;
   border-radius: 5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 500ms ease-in;
 }
 .cta-btn:hover{
   background: hsla(322, 100%, 66%, 0.842);
   cursor: pointer;
+  transform: scale(1.05);
 }
 #header-feature-block figure {
   margin: 3rem auto 2rem auto;
@@ -101,6 +105,10 @@ main {
   border-radius: 1rem;
   padding: 2.5rem;
   text-align: center;
+  animation-name: blockAnimator;
+  animation-duration: 1.2s;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
 }
 .feature-img {
   margin: 2rem 0 2rem 0;
@@ -187,20 +195,22 @@ footer ul li {
   color: white;
 }
 .social-media-links {
- background: white;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 12rem;
+  width: 7rem;
+ 
   margin: 1rem auto;
   margin-top: 2rem;
 }
-.social-media-links img{
-
- width: 1.2rem;
- background: #000;
+.social-media-links i{
+display: block;
+color: white;
+border: 0;
+transition: all 250ms ease-out;
 }
-.social-media-links img:active{
+.social-media-links i:hover{
 color: var(--primary-pink);
 cursor: pointer;
 }
@@ -283,5 +293,16 @@ flex-direction: row-reverse;
   #first-footer table {
     margin-bottom: 3rem;
     padding: 0;
+  }
+}
+
+@keyframes blockAnimator {
+  from{
+    transform: translate(0,60px);
+    opacity: 0.5;
+  }
+  to{
+    transform: none;
+    opacity: 1;
   }
 }
