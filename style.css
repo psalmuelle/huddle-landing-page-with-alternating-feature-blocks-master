@@ -41,7 +41,7 @@ header {
   height: 1.7rem;
   border: 0;
   border-radius: 4rem;
-  /*BOX AND TEXT SHADOW SHOULD BE HERE*/
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #header-btn:hover{
   cursor: pointer;
@@ -78,6 +78,7 @@ header {
   color: var(--very-pale-cyan);
   font-weight: bold;
   border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .cta-btn:hover{
   background: hsla(322, 100%, 66%, 0.842);
@@ -95,8 +96,8 @@ main {
 }
 .feature-block {
   margin-top: 2.5rem;
-  /*BOX SHADOW HERE*/
-  border: 1px solid green;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
   border-radius: 1rem;
   padding: 2.5rem;
   text-align: center;
@@ -134,7 +135,7 @@ footer {
   width: 23rem;
   height: 11.5rem;
   border-radius: 1rem;
-  border: 1px solid green;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #absolute-cta h1 {
   font-size: 1.1rem;
@@ -186,13 +187,18 @@ footer ul li {
   color: white;
 }
 .social-media-links {
-  background: #000;
+ background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 12rem;
   margin: 1rem auto;
   margin-top: 2rem;
+}
+.social-media-links img{
+
+ width: 1.2rem;
+ background: #000;
 }
 .social-media-links img:active{
 color: var(--primary-pink);
